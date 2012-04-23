@@ -1,9 +1,17 @@
-#include <math.h>
-#include <limits.h>
-#include <sys/types.h>
-#include <regex.h>
-#include <time.h>
-#include <stdlib.h>
+/*
+* Copyright 2011 Macarthur Inbody
+*
+* This code is licensed under the LGPLv3. It is not dual licensed.
+*/
+
+/*
+*This is the primary file for other items that aren't as important as they kinda are. Include this if you want them all.
+*
+*
+*/
+
+#include "functions.h"
+
 // notes to self.
 // reverse the range so that it starts small and gets big.
 // after that, do the multiplication the same as you were.

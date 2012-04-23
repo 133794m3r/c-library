@@ -1,4 +1,8 @@
-
+/*
+* Copyright 2011 Macarthur Inbody
+*
+* This code is licensed under the LGPLv3. It is not dual licensed.
+*/
 /*
 C(3,3)
 

@@ -1,4 +1,10 @@
 /*
+* Copyright 2011 Macarthur Inbody
+*
+* This code is licensed under the LGPLv3. It is not dual licensed.
+*/
+
+/*
 * from here. http://stackoverflow.com/questions/779875/what-is-the-function-to-replace-string-in-c#779888
 */
 char *str_replace(char *orig, char *rep, char *with) {
