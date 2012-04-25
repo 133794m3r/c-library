@@ -1,3 +1,48 @@
 This is various functions that I've written and currently use. They're released under the LGPLv3 or later
 
 I chose this license since it's simple and it works how I would like my programs to be since it is a library and I see the lgplv3 to be a good license for it.
+
+Also included in this repo is P99, this is licensed under the QPL. You are
+free to use it in any project that you want but you are unable to modify it
+without providing all source code to it, you are also unable to fork it. Any
+changes must be provided as a patch only. P99 is used to allow optional
+arguments.
+
+Included are the following functions.
+
+substring a way to get substring. The interface is as follows.
+
+substring(*string,start,<optional> end);
+if end isn't specified it'll get you the end of the string.
+
+strreplace(original_string,string_to_replace,replace_with);
+
+unsigned int m_product_c(k,n)
+
+calculates the product in mathematics
+
+  K
+unsigned int PROD (n-(k-i))/i
+ i=1;
+
+float m_product_cf(k,n)
+
+the same as above but is a float version.
+
+float mean(array,array_length);
+
+caclulates the mean of an array of numbers.
+
+
+standard_deviation(array,mean, array_length)
+
+calculates the standard deviatation on a set of numbers.
+
+unsigned long microtime()
+
+returns the current time in microseconds
+
+int match(string,pattern)
+
+returns 1 if the string is found
+returns 0 if the string isn't found.
