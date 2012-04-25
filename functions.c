@@ -46,7 +46,7 @@ x=sides
  SUM  (-1)^k * C(n,k) * C(s-x*k-1,n-1)
  k=0
 */
-#define round(x) ((x)>=0?(long)((x)+0.5):(long)((x)-0.5))
+//#define round(x) ((x)>=0?(long)((x)+0.5):(long)((x)-0.5))
 float chance_calc_single(float min, float max, float amount, float desired_result){
 	printf("%f\n",desired_result);	
     float range=(max-min)+1;
@@ -83,7 +83,4 @@ int match(const char *string, char *pattern) {
    }
 
   return 1;
-}
-int main(){
-return 0;
 }
