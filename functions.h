@@ -34,6 +34,7 @@
 #include <math.h>
 #include <limits.h>
 #include <sys/types.h>
+#include <sys/time.h>
 #include <regex.h>
 #include <time.h>
 #include <stdlib.h>
@@ -43,6 +44,15 @@
 #include <assert.h>
 #include <string.h>
 
+<<<<<<< HEAD
 #include "math.c"
 #include "string.c"
 #include "uber_rand.c"
+=======
+#include "p99/p99.h"
+
+#include "math.c"
+#include "string.c"
+#include "uber_rand.c"
+
+>>>>>>> development

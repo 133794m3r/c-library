@@ -74,23 +74,16 @@ char *str_replace(char *orig, char *rep, char *with) {
 
 //strncpy(dest, str+offset, len);
 
-char *substring(char *string,int start, ...){
-    va_list args;
-    int unsigned i=0;
-    int num=0;
-    long long unsigned end=-1;
-    long long length=strlen(string);
-    va_start(args,start);
-    for(i=start;i;++i){
-        i=va_arg(args,int);
-    }
-    end=i;
-    printf("%i\n",i);
-    va_end(args);
-    if(end==-1){
-        end=length;
-    }
-    char *to_string=malloc(length);
-    strncpy(to_string,string+start,end);
-    return to_string;
+#define substring(...) P99_CALL_DEFARG(substring, 3, __VA_ARGS__)
+#define substring_defarg_2() (-1)
+char *substring(char *string, size_t start, size_t len) {
+  size_t length = strlen(string);
+  if(len == SIZE_MAX){
+    len = length - start;
+  }
+  char *to_string = malloc(len + 1);
+  memcpy(to_string, string+start, len);
+  to_string[len] = '\0';
+  return to_string;
 }
+
